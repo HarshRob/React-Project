@@ -31,7 +31,7 @@ function About(props) {
 
     const partners = props.partners.map(partner => {
         return (
-            <Media key={partner.id}>
+            <Media tag="li" key={partner.id}>
                 <RenderPartner partner={partner}/>
             </Media>
         );
@@ -75,7 +75,7 @@ function About(props) {
                     <Card className="bg-light mt-3">
                         <CardBody>
                             <blockquote className="blockquote">
-                                <p className="mb-3">I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.</p>
+                                <p>I will not follow where the path may lead, but I will go where there is no path, and I will leave a trail.</p>
                                 <footer className="blockquote-footer">Muriel Strode,{' '}
                                     <cite title="Source Title">"Wind-Wafted Wild Flowers" -
                                     The Open Court, 1903</cite>

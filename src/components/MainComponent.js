@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
 import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
-import { CAMPSITES } from '../shared/campsites';
 import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+
+import { CAMPSITES } from '../shared/campsites';
 import { COMMENTS } from '../shared/comments';
 import { PARTNERS } from '../shared/partners';
 import { PROMOTIONS } from '../shared/promotions';
