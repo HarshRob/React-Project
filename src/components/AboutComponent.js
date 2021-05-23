@@ -6,19 +6,11 @@ function RenderPartner({partner}) {
     if(partner) {
         return (
             <React.Fragment>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3">
-                            <Media object src={partner.image} alt={partner.name} width="150" />
-                        </div>
-                        <div className="col">
-                            <Media body className="ml-5 mb-4">
-                                <Media heading>{partner.name}</Media>
-                                {partner.description}
-                            </Media>
-                        </div>
-                    </div>
-                </div>
+                <Media object src={partner.image} alt={partner.name} width="150" />
+                <Media body className="ml-5 mb-4">
+                    <Media heading>{partner.name}</Media>
+                    {partner.description}
+                </Media>       
             </React.Fragment>
         );
     }
