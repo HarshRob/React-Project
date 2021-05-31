@@ -2,7 +2,6 @@ import React, { Component }from 'react';
 import { Button, Label, Modal, ModalHeader, ModalBody, Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 
 
